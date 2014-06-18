@@ -9,4 +9,7 @@
                  [postgresql "9.1-901.jdbc4"]
                  [ring/ring-jetty-adapter "1.2.1"]
                  [compojure "1.1.6"]
-                 [hiccup "1.0.4"]])
+                 [hiccup "1.0.4"]]
+  :main ^:skip-aot shouter.web
+  :uberjar-name "shouter-standalone.jar"
+  :profiles {:uberjar {:aot :all}})
